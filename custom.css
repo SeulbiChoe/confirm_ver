@@ -11,7 +11,7 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #wrap {
@@ -56,7 +56,8 @@ html, body {
     width: auto;
     height: auto;
     padding: 4px;
-    background: transparent;
+    /* background: transparent; */
+    background-color: #eee;
 }
 .vr-btn span {
     width: 4.6em;
