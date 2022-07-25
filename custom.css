@@ -52,13 +52,15 @@ h1 {
     letter-spacing: 0.3rem;
     display: inline;
     height: auto;
+    /* height 100일때는 잘 나옴!!!; */
     text-align: center;
     background-color: violet;
-    width: auto;
+    width: 100vw;
+    /* width: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 10%;
+    right: 10%; */
 }
 .border-right {
     border-right: 1px solid #fff;
