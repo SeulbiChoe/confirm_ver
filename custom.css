@@ -42,7 +42,7 @@ html, body {
     transform: translateY(-50%);
     background-color: yellowgreen;
 }
-h1 {
+.h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     letter-spacing: 0.3rem;
