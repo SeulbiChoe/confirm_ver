@@ -15,8 +15,8 @@ html, body {
 }
 
 #wrap {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 #bg-img {
     width: 100%;
@@ -26,53 +26,15 @@ html, body {
     left: 0;
     transition: opacity 4s;
     opacity: 0;
-    background: url(gif_960\ 540\ _20frame_noloap.gif) center no-repeat;
+    background: url(960_540\ 25frame_noloop.gif) center no-repeat;
     background-size: contain;
 }
+
 #text-opacity {
-    opacity: 0;
-    transition: opacity 2s;
+    background-color: violet;
 }
-
-.text-area {
-    position: absolute;
-    top: 50%;
-    /* right: 10%; */
-    left: 10%;
-    transform: translateY(-50%);
-    width: 80%;
-    height: 80vh;
-    background-color: blueviolet;
-}
-
-.text-area h1 {
+h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    height: 100%;
-    text-align: center;
-    letter-spacing: 0.2rem;
-    width: 100%;
-    background-color: tomato;
-}
-.vr-btn {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: auto;
-    height: auto;
-    padding: 4px;
-    /* background: transparent; */
-    background-color: royalblue;
-}
-.vr-btn span {
-    width: 4.6em;
-    height: 4.6em;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    padding-bottom: 0.15em;
-}
-
-/* Class 추가 */
-
-.border-right {
-    border-right: 1px solid #fff;
+    letter-spacing: 0.3rem;
 }
