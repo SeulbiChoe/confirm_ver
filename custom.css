@@ -49,6 +49,7 @@ html, body {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     letter-spacing: 0.3rem;
+    height: 100%;
 }
 .border-right {
     border-right: 1px solid #fff;
