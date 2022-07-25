@@ -10,18 +10,25 @@
   <body>
       <div id="wrap" style="background-color: #000;">
 
-        <div id="bl-bg"></div>
+        <div id="bg-img"></div>
 
-        <div class="container">
+        <div class="container-fluid" id="text-opacity">
             <div class="row" style="height: 100vh; position: relative;">
-                <div class="col-12 text-area d-flex">
-                    <div></div>
-                    <div>
-                        <p></p>
-                        <button>VR<br>START</button>
+                <div class="col-12 text-area d-flex justify-content-end">
+                    <div class="my-auto" style="text-align: right;">
+                        <div class="pt-lg-5 border-right pe-2">
+                            <p class="text-light pt-5 px-3 fs-6">
+                                Restoration <br> of <br> 6 interior <br> murals
+                            </p>
+                        </div>
+                        <div style="width: auto;" class="pe-2">
+                            <button class="vr-btn fs-6">
+                                <span class="d-flex justify-content-center align-items-center text-light">VR<br>START</span>
+                            </button>
+                        </div>
                     </div>
                     <div style="height: 100%;">
-                        <h1>부석사조사당벽화</h1>
+                        <h1 class="fs-1 text-light px-3">부석사조사당벽화</h1>
                     </div>
 
                 </div>
@@ -52,16 +59,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript">
 
+    function textTimeOut () {
+        document.getElementById('text-opacity').style.opacity = 1;
+    }
+    setTimeout(textTimeOut, 1000);
 
 
-
-
-
-        // 검정 반투명 background
+        // 이미지 반투명 background
         function bgTimeout () {
-            document.getElementById('bl-bg').style.opacity = 1;
+            document.getElementById('bg-img').style.opacity = 1;
         };
-        // setTimeout(bgTimeout, 1000);
+        setTimeout(bgTimeout, 2200);
+    
 
 
 
