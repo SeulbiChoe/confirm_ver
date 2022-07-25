@@ -24,14 +24,14 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    transition: all 4s;
+    transition: opacity 4s;
     opacity: 0;
     background: url(gif_960\ 540\ _20frame_noloap.gif) center no-repeat;
     background-size: contain;
 }
 #text-opacity {
     opacity: 0;
-    transition: all 2s;
+    transition: opacity 2s;
 }
 
 .text-area {
