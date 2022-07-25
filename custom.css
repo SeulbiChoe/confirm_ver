@@ -51,13 +51,14 @@ h1 {
     text-orientation: mixed;
     letter-spacing: 0.3rem;
     display: inline;
-    height: 80%;
+    height: auto;
     text-align: center;
     background-color: violet;
     width: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    right: 10%;
 }
 .border-right {
     border-right: 1px solid #fff;
