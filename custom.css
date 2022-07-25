@@ -42,7 +42,7 @@ html, body {
     transform: translateY(-50%);
     width: 80%;
     height: 80vh;
-    background-color: tomato;
+    background-color: blueviolet;
 }
 
 .text-area h1 {
@@ -51,6 +51,8 @@ html, body {
     height: 100%;
     text-align: center;
     letter-spacing: 0.2rem;
+    width: 100%;
+    background-color: tomato;
 }
 .vr-btn {
     border: 1px solid #fff;
