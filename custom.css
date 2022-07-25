@@ -33,13 +33,14 @@ html, body {
     opacity: 0;
     transition: all 2s;
 }
+
 .text-area {
-    width: 100%;
-    height: 80vh;
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 10%;
     transform: translateY(-50%);
+    width: 80%;
+    height: 80vh;
 }
 
 .text-area h1 {
