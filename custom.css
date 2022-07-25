@@ -31,8 +31,10 @@ html, body {
 }
 
 #text-opacity {
-    background-color: violet;
     width: 100vw;
+    height: auto;
+    opacity: 0;
+    transition: opacity 2s;
 }
 .text-area {
     width: 100vw;
@@ -40,10 +42,25 @@ html, body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-color: yellowgreen;
 }
 .h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     letter-spacing: 0.3rem;
+}
+.border-right {
+    border-right: 1px solid #fff;
+}
+.vr-btn {
+    border: 1px solid #fff;
+    padding: 4px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.vr-btn span {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
 }
