@@ -32,6 +32,7 @@ html, body {
 
 #text-opacity {
     background-color: violet;
+    width: 100vw;
 }
 h1 {
     writing-mode: vertical-rl;
