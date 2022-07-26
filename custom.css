@@ -17,8 +17,9 @@ h1 {
     text-orientation: mixed;
     letter-spacing: 0.3rem;
     text-align: center;
-    background-color: steelblue;
-    -webkit-text-size-adjust : 100%;
+    background-color: sienna;
+    -webkit-text-size-adjust : 100% !important;
+    font-family: 'Noto Serif KR', serif !important;
 }
 .title {
     height: auto;
