@@ -77,9 +77,11 @@ h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     letter-spacing: 0.3rem;
-    background-color: thistle;
+    background-color: skyblue;
     display: inline;
     padding: 1rem;
+    /* height: 100%; */
+    /* visibility: hidden; */
 }
 .border-right {
     border-right: 1px solid #fff;
@@ -89,4 +91,14 @@ h1 {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+h1 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.3rem;
+    background-color: thistle;
+    display: inline;
+    padding: 1rem;
+    height: 100%;
+
 }
