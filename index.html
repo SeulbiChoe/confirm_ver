@@ -49,7 +49,7 @@
 
 
         <div class="container-fluid px-0">
-            <div class="text-area d-inline-flex" style="width: 100vw; background-color: tomato; height: auto;">
+            <div class="text-area d-inline-flex" style="width: 100vw; background-color: turquoise;">
                 <div style="background-color: yellowgreen; position: relative;">
                     <div class="border-right">
                         <p class="fs-6 text-light">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <p class="fs-2 text-light mb-0" id="height">
+                <p class="fs-1 text-light mb-0" id="height">
                     부석사조사당벽화
                 </p>
             </div>
@@ -113,7 +113,8 @@
     
 
     var height = $('#height').height();
-    $('#height').prev().css.height = height; 
+    $('#height').prev().css.height = height;
+    $('.text-area').css.height = height;
         
 
 
