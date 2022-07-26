@@ -79,6 +79,7 @@ h1 {
     letter-spacing: 0.3rem;
     background-color: thistle;
     display: inline;
+    padding: 1rem;
 }
 .border-right {
     border-right: 1px solid #fff;
