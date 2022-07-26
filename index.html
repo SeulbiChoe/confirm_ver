@@ -36,15 +36,39 @@
         </div> -->
 
 
-        <div class="container-fluid px-0">
+        <!-- <div class="container-fluid px-0">
             <div class="row position-absolute mx-0" style="width: 100vw; height: auto; top: 50%; right: 0; transform: translateY(-50%);">
                 <div class="col-12 d-flex position-relative px-0" style="background-color: tomato; height: auto;">
                     <div class="position-absolute">1</div>
                     <h1 class="mb-0 pe-3">부석사조사당벽화</h1>
                 </div>
             </div>
-        </div>
+        </div> -->
 
+
+
+
+        <div class="container-fluid px-0">
+            <div class="text-area d-inline-flex" style="width: 100vw; background-color: tomato; height: auto;">
+                <div style="background-color: yellowgreen; position: relative;">
+                    <div class="border-right">
+                        <p class="fs-6 text-light">
+                            Restoration <br> of <br> 6 interior <br> murals
+                        </p>
+                    </div>
+                    <div class="vr-btn">
+                        <button class="border rounded-5">
+                            <span class="fs-6 text-light">VR<br>START</span>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="fs-1 text-light mb-0" id="height">
+                    부석사조사당벽화
+                </p>
+            </div>
+
+        </div>
 
 
 
@@ -88,8 +112,9 @@
         // setTimeout(bgTimeout, 2100);
     
 
-
-
+    var height = $('#height').height();
+    $('#height').prev().css.height = height; 
+        
 
 
 

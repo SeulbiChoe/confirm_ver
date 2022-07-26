@@ -31,7 +31,7 @@ html, body {
     background-size: contain;
 }
 
-#text-opacity {
+/* #text-opacity {
     width: 100vw;
     height: 100vh;
     opacity: 0;
@@ -40,7 +40,7 @@ html, body {
 .text-area {
     height: auto;
     position: relative;
-    height: 40vh;
+    height: 80vh;
     top: 50vh;
     left: 0;
     transform: translateY(-20vh);
@@ -71,4 +71,21 @@ h1 {
     width: 5em;
     height: 5em;
     padding-bottom: 0.2em;
+} */
+
+.text-area > p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.3rem;
+    background-color: thistle;
+    display: inline;
+}
+.border-right {
+    border-right: 1px solid #fff;
+}
+.vr-btn {
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
