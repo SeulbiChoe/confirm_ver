@@ -12,122 +12,20 @@
 
         <div id="bg-img"></div>
 
-        <!-- <div class="container-fluid px-0" id="text-opacity">
-            <div class="row row-cols-auto mx-0 text-area" style="width: 100vw;">
-                <div class="col ms-auto" style="background-color: thistle;"></div>
-                <div class="col" style="background-color: tomato;">
-                    <div>
-                        <p class="fs-6">
-                            Restoration <br> of <br> 6 interior <br> murals
-                        </p>
-                    </div>
-                    <div>
-                        <button>
-                            <span>
-                                VR<br>START
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col" style="background-color: thistle;">
-                    <h1 class="text-light ">부석사조사당벽화</h1>
-                </div>
-            </div>
-        </div> -->
-
-
-        <!-- <div class="container-fluid px-0">
-            <div class="row position-absolute mx-0" style="width: 100vw; height: auto; top: 50%; right: 0; transform: translateY(-50%);">
-                <div class="col-12 d-flex position-relative px-0" style="background-color: tomato; height: auto;">
-                    <div class="position-absolute">1</div>
-                    <h1 class="mb-0 pe-3">부석사조사당벽화</h1>
-                </div>
-            </div>
-        </div> -->
-
-
-
-
-        <!-- <div class="container-fluid px-0">
-            <div class="text-area d-inline-flex" style="width: 100vw; background-color: turquoise;">
-                <div style="background-color: yellowgreen; position: relative;">
-                    <div class="border-right">
-                        <p class="fs-6 text-light">
-                            Restoration <br> of <br> 6 interior <br> murals
-                        </p>
-                    </div>
-                    <div class="vr-btn">
-                        <button class="border rounded-5">
-                            <span class="fs-6 text-light">VR<br>START</span>
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <h1 class="text-light mb-0">
-                        부석사조사당벽화
-                    </h1>
-                </div>
-                <p class="fs-1 text-light mb-0" id="height">
-                    부석사조사당벽화
-                </p>
-            </div>
-
-        </div> -->
-
-        <!-- <div class="container-fluid px-0" style="position: relative;">
-            <div class="text-area" style="width: 100vw; background-color: thistle; position: absolute; top: 50vh; transform: translateY(-50%);">
-                <h1>부석사조사당벽화</h1>
-            </div>
-            <div class="text-area" style="position: absolute; top: 50vh; transform: translateY(-50%); background-color: violet; right: 10%;">
-                <div>
-                    <p class="text-light">
+        <div class="container-fluid d-flex justify-content-center align-items-center px-0" style="width: 100vw; height: 100vh;">
+            <div class="row px-0 flex-nowrap" style="width: 100vw; height: auto; background-color: thistle;">
+                <div class="text-area ms-auto d-inline-block" style="background-color: tomato;">
+                    <p class="fs-6 text-light">
                         Restoration <br> of <br> 6 interior <br> murals
                     </p>
+                    <h1 class="px-3 title">부석사조사당벽화</h1>
                 </div>
                 <div>
-                    <button>
-                        <span class="fs-6 text-light">VR<br>START</span>
-                    </button>
+
+                    <h1 class="height-hidden">부석사조사당벽화</h1>
                 </div>
             </div>
-        </div> -->
-
-
-        <!-- <div class="container-fluid px-0" style="background-color: violet;">
-            <div class="row px-0" style="background-color: slategray;">
-                <div class="col px-0 text-area" style="background-color: skyblue;">
-
-                </div>
-                <div class="col-2 px-0" style="background-color: salmon; height: 80vh;">
-                    <h1 class="px-5">여덟글자여덟글자</h1>
-                </div>
-            </div>
-        </div> -->
-
-        <div class="container-fluid px-0 d-flex align-items-center" style="width: 100vw; height: 100vh;">
-            <div class="text-area row px-0">
-                <div class="col-6 ms-auto" style="background-color: springgreen;">
-                    <div class="">
-                        <p>
-                            Restoration <br> of <br> 6 interior <br> murals
-                        </p>
-                    </div>
-                    <div>
-                        <button>
-                            <span class="fs-6 text-light">VR<br>START</span>
-                        </button>
-                    </div>
-                </div>
-                <div style="height: 50vh; background-color: tomato;" class="col-2 me-2">
-                    <h1 class="text-light px-3">부석사조사당벽화</h1>
-                </div>
-            </div>
-
         </div>
-        
-
-
-
 
 
       </div>
@@ -151,7 +49,10 @@
         // setTimeout(bgTimeout, 2100);
     
 
+        var height = $('.height-hidden').height();
+        console.log(height)
 
+        $('.text-area').css.height = height;
 
 
 

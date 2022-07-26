@@ -5,133 +5,31 @@
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
-    font-family: 'Noto Serif KR', serif;
-}
-h1, p {
-    border: 0 !important;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline !important;
+    font-family: 'Noto Serif KR', serif !important;
 }
 html, body {
     width: 100vw;
     height: 100vh;
-    /* overflow: hidden; */
-}
-
-#wrap {
-    width: 100vw;
-    height: 100vh;
     overflow: hidden;
 }
-#bg-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 4s;
-    opacity: 0;
-    background: url(960_540\ 25frame_noloop.gif) center no-repeat;
-    background-size: contain;
-}
-
-/* #text-opacity {
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    transition: opacity 2s;
-}
-.text-area {
-    height: auto;
-    position: relative;
-    height: 80vh;
-    top: 50vh;
-    left: 0;
-    transform: translateY(-20vh);
-}
 h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     letter-spacing: 0.3rem;
-    display: inline;
-    height: auto;
     text-align: center;
-    background-color: violet;
-    width: 100vw;
+    background-color: blanchedalmond;
 }
-.border-right {
-    border-right: 1px solid #fff;
-}
-.vr-btn {
-    border: 1px solid #fff;
-    padding: 4px;
-    background: transparent;
-    border-radius: 50%;
+.title {
+    height: auto;
 }
 
-.vr-btn span {
-    border: 3px solid #fff;
-    border-radius: 50%;
-    width: 5em;
-    height: 5em;
-    padding-bottom: 0.2em;
-} */
-
-/* .text-area > p {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    letter-spacing: 0.3rem;
-    background-color: skyblue;
-    display: inline;
-    padding: 1rem;
-
+.height-hidden {
+    width: 0;
+    position: absolute;
+    left: -9999;
+    top: -9999;
+    opacity: 0;
 }
-.border-right {
-    border-right: 1px solid #fff;
-}
-.vr-btn {
+.text-area {
     width: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-h1 {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    letter-spacing: 0.3rem;
-    width: 100%;
-    height: auto;
-    background-color: teal;
-    text-align: center;
-}
-.text-area {
-    height: 50vh;
-} */
-
-
-
-.text-area {
-    width: 100vw;
-    height: 50vh;
-    background-color: thistle;
-    align-items: center;
-}
-
-
-h1 {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    letter-spacing: 0.3rem;
-    height: 100%;
-    background-color: violet;
-    text-align: center;
-}
-
-
-/* Tablet */
-@media (min-width: 768px) {
-    .text-area {
-        height: 60vh;
-    }
 }
