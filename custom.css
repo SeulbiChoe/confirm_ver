@@ -115,6 +115,7 @@ h1 {
     width: 100vw;
     height: 50vh;
     background-color: thistle;
+    align-items: center;
 }
 
 
