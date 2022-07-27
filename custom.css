@@ -11,6 +11,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    text-size-adjust: 100% !important;
 }
 h1 {
     writing-mode: vertical-rl;
@@ -18,7 +19,6 @@ h1 {
     letter-spacing: 0.3rem;
     text-align: center;
     background-color: sienna;
-    -webkit-text-size-adjust : 100% !important;
     font-family: 'Noto Serif KR', serif !important;
 }
 .title {
