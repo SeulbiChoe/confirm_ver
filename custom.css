@@ -20,7 +20,7 @@ h1 {
     text-orientation: mixed;
     letter-spacing: 0.3rem;
     text-align: center;
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     height: auto;
 }
 .text-area {
