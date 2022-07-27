@@ -15,12 +15,11 @@ html, body {
 	-moz-text-size-adjust: none; 
 	-ms-text-size-adjust: none; 
 }
-h1 {
+/* h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     letter-spacing: 0.3rem;
     text-align: center;
-    /* background-color: sandybrown; */
     height: auto;
 }
 .text-area {
@@ -43,4 +42,9 @@ h1 {
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
+} */
+h1 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.3rem;
 }
