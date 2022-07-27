@@ -48,3 +48,18 @@ h1 {
     text-orientation: mixed;
     letter-spacing: 0.3rem;
 }
+.border-right {
+    border-right: 1px solid #fff;
+}
+button {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50% !important;
+}
+button span {
+    width: 4.4em;
+    height: 4.4em;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    line-height: 0.9em;
+}
