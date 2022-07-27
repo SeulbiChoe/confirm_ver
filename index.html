@@ -15,13 +15,13 @@
 
         <div class="container-fluid" style="width: 100vw; height: 100vh;">
             <div class="d-flex px-3 flex-nowrap justify-content-end align-items-center" style="height: 100%; width: 100%;">
-                <div class="text-area d-inline-block">
-                    <div>
-                        <p>
+                <div class="text-area col-5">
+                    <div class="text-end px-3">
+                        <p class="fs-6 text-light">
                             Restoration <br> of <br> 6 interior <br> murals
                         </p>
                     </div>
-                    <div>
+                    <div style="position: absolute; bottom: 0;" class="text-end">
                         <button>
                             <span>
                                 VR<br>START
@@ -29,8 +29,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-2" style="background-color: tomato; ">
-                    <h1 class="text-light px-3 fw-semibold">여덟여덟여덟여덟</h1>
+                <div class="col-2 col-lg-1 ps-2" style="background-color: tomato;">
+                    <h1 class="text-light fw-semibold h-height ">여덟여덟여덟여덟</h1>
                 </div>
             </div>
         </div>
@@ -44,10 +44,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript">
 
-    function textTimeOut () {
-        document.getElementById('text-opacity').style.opacity = 1;
-    }
-    setTimeout(textTimeOut, 1000);
+    // function textTimeOut () {
+    //     document.getElementById('text-opacity').style.opacity = 1;
+    // }
+    // setTimeout(textTimeOut, 1000);
 
 
         // 이미지 반투명 background
@@ -56,13 +56,12 @@
         };
         // setTimeout(bgTimeout, 2100);
     
+        let hHeight = $('.h-height').height();
+        console.log(hHeight);
 
-        var height = $('.height-hidden').height();
-        console.log(height)
-
-        $('.text-area').css.height = height;
-
-
+        $('.text-area').css.height = hHeight;
+        let divHeight = $('.text-area').height();
+        console.log(divHeight)
 
     </script>
 </body>
