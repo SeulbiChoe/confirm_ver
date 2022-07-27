@@ -30,11 +30,12 @@ button {
     border-radius: 50% !important;
 }
 button span {
-    width: 4.4em;
-    height: 4.4em;
+    width: 4.45em;
+    height: 4.45em;
     border: 3px solid #fff;
     border-radius: 50%;
     line-height: 0.95em;
+    font-size: 0.9em;
 }
 
 #bg-img {
@@ -54,5 +55,5 @@ button span {
     height: 100vh;
     position: relative;
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 2.5s;
 }
