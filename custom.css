@@ -11,7 +11,7 @@ html, body {
     height: 100vh;
     overflow: hidden;
     text-size-adjust: none !important;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,serif;
 	-webkit-text-size-adjust: none; 
 	-moz-text-size-adjust: none; 
 	-ms-text-size-adjust: none; 
