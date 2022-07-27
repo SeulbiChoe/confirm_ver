@@ -15,7 +15,10 @@ html, body {
 	-moz-text-size-adjust: none; 
 	-ms-text-size-adjust: none; 
 }
-
+#wrap {
+    width: 100vw;
+    height: 100vh;
+}
 h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
