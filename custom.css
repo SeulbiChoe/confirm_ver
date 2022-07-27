@@ -1,11 +1,10 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 * {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
-    font-family: 'Noto Serif KR', serif !important;
+    font-family: "궁서", Gungsuh, Arial, serif;
 }
 html, body {
     width: 100vw;
@@ -23,7 +22,7 @@ h1 {
     letter-spacing: 0.3rem;
     text-align: center;
     background-color: wheat;
-    font-family: 'Noto Serif KR', serif !important;
+    font-family: "궁서", Gungsuh, Arial, serif;
 }
 .title {
     height: auto;
