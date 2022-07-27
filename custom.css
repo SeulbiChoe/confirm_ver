@@ -24,6 +24,23 @@ h1 {
     height: auto;
 }
 .text-area {
-    background-color: thistle;
+    background-color: sienna;
+
     position: relative;
+}
+.text-wrapper {
+    background-color: slategray;
+    position: relative;
+}
+.vr-btn {
+    display: block;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.vr-btn span {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
 }
