@@ -21,8 +21,9 @@ h1 {
     text-orientation: mixed;
     letter-spacing: 0.3rem;
     text-align: center;
-    background-color: wheat;
+    background-color: seagreen;
     font-family: "궁서", Gungsuh, Arial, serif;
+    height: auto;
 }
 .title {
     height: auto;
