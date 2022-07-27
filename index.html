@@ -12,23 +12,47 @@
 
         <div id="bg-img"></div>
 
-        <div class="container-fluid text-end text-light" style="background-color: yellowgreen; width: 100vw; height: 100vh; position: relative;">
-            <div class="row row-cols-2 flex-nowrap" style="background-color: violet; position: absolute; top: 50%; transform: translateY(-50%); right: 0;">
-                <div class="col-10" style="background-color: slategray; position: relative;">
-                    <p class="pt-5 pe-3 pb-1 border-right fs-6">
-                        Restoration <br> of <br> 6 interior <br> murals
-                    </p>
-                    <button class="me-2" style="position: absolute; bottom: 0; right: 0;">
-                        <span class="text-center mx-1 my-1 text-light fs-6 d-flex justify-content-center align-items-center">
-                            VR <br> START
-                        </span>
-                    </button>
+        <!-- <div class="container-fluid px-0" id="text-opacity">
+            <div class="row row-cols-auto mx-0 text-area" style="width: 100vw;">
+                <div class="col ms-auto" style="background-color: thistle;"></div>
+                <div class="col" style="background-color: tomato;">
+                    <div>
+                        <p class="fs-6">
+                            Restoration <br> of <br> 6 interior <br> murals
+                        </p>
+                    </div>
+                    <div>
+                        <button>
+                            <span>
+                                VR<br>START
+                            </span>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-2 text-center" style="background-color: slateblue;">
-                    <h2 class="px-3 fw-semibold" style="background-color: sienna;">가나다라마바사아</h2>
+                <div class="col" style="background-color: thistle;">
+                    <h1 class="text-light ">부석사조사당벽화</h1>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="container-fluid px-0">
+            <div class="row position-absolute" style="width: 100vw; height: auto; top: 50%; right: 0; transform: translateY(-50%);">
+                <div class="col-12 d-flex position-relative" style="background-color: tomato; height: auto;">
+                    <div class="position-absolute">1</div>
+                    <h1 class="mb-0 pe-3">부석사조사당벽화</h1>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,18 +60,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript">
 
-    // function textTimeOut () {
-    //     document.getElementById('text-opacity').style.opacity = 1;
-    // }
-    // setTimeout(textTimeOut, 1000);
+    function textTimeOut () {
+        document.getElementById('text-opacity').style.opacity = 1;
+    }
+    setTimeout(textTimeOut, 1000);
 
-        let hHeight = $('.h-height').height();
-        $('.text-wrapper').height = hHeight;
-        $('.text-area').height = hHeight;
 
         // 이미지 반투명 background
         function bgTimeout () {
@@ -55,6 +87,10 @@
         };
         // setTimeout(bgTimeout, 2100);
     
+
+
+
+
 
 
     </script>
