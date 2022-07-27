@@ -11,7 +11,8 @@ html, body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    text-size-adjust: 100% !important;
+    text-size-adjust: none !important;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 }
 h1 {
     writing-mode: vertical-rl;
