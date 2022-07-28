@@ -1,62 +1,80 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 
 * {
     margin: 0 !important;
     padding: 0 !important;
-    box-sizing: border-box !important;
-    font-family: 'Nanum Myeongjo', serif;
-}
-html, body {
-    width: 100vw;
-    height: 100vh;
-    text-size-adjust: none;
-	-webkit-text-size-adjust: none; 
-	-moz-text-size-adjust: none; 
-	-ms-text-size-adjust: none; 
-}
-#wrap {
-    width: 100vw;
-    height: 100vh;
-}
-h1 {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    letter-spacing: 0.3rem;
-}
-.border-right {
-    border-right: 1px solid #fff;
-}
-button {
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 50% !important;
-}
-button span {
-    width: 4.45em;
-    height: 4.45em;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    line-height: 0.95em;
-    font-size: 0.9em;
+    box-sizing: border-box;
 }
 
-#bg-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 4s;
-    opacity: 0;
-    background: url(960_540\ 25frame_noloop.gif) center no-repeat;
-    background-size: contain;
+#address {
+    text-align: center;
 }
 
-#text-opacity {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    opacity: 0;
-    transition: opacity 2.5s;
+#lnb {
+    font-size: 1em;
+
+}
+
+#gnb {
+    font-size: 1em;
+}
+#gnb li:first-child a {
+    border-top: 1px solid #fff;
+}
+.sub-menu {
+    position: initial;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    #address {
+        text-align: left;
+    }
+
+
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #lnb {
+        font-size: 0.95em;
+    }
+    #gnb {
+        font-size: 0.85em;
+    }
+    #gnb li:first-child a {
+        border-top: none;
+    }
+    .sub-menu {
+        position: absolute;
+        background-color: teal;
+
+    }
+
+
 }
