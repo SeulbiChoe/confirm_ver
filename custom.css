@@ -2,8 +2,8 @@
 
 * {
     /* margin: 0 !important;
-    padding: 0 !important; */
-    box-sizing: border-box !important;
+    padding: 0 !important;
+    box-sizing: border-box !important; */
 }
 
 #address {
@@ -19,7 +19,7 @@ nav button {
     outline: none !important;
 }
 /*부트스트랩 속성 클릭할 때 나오는 border 삭제 */
-button:active, button:focus { 
+nav button:active, nav button:focus { 
     border: none !important; 
     box-shadow: none !important; 
     outline: none !important;
@@ -43,27 +43,48 @@ button:active, button:focus {
 
 #banner-wrap {
     width: 100vw;
-    height: 30vh;
+    height: auto;
     background-color: violet;
     margin-top: 7vh !important;
+    text-align: center;
 }
 
 #banner-wrap img {
-    /* height: 30vh;
-    object-fit: cover;
     max-width: 100%;
-    height: auto; */
+    height: auto;
 }
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
+   .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 24px;
+    height: 24px;
+    }
+   .carousel .carousel-indicators button {
+    width: 10px;
+   height: 10px;
+   border-radius: 50%;
+ }
 
 
 
 
-
-
-
-
-
-
+/* Article 영역 */
+#content-item {
+    width: 100%;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+#content-item div {
+    width: 48%;   
+}
+#content-item div p {
+    height: 7em;
+}
 
 
 
@@ -95,14 +116,16 @@ button:active, button:focus {
         font-size: 0.85em;
         line-height: 7vh;
     }
-    #banner-wrap {
-        height: 40vh;
-    }
+
     #banner-wrap img {
         /* height: 40vh; */
         /* width: 100%; */
     }
+    #content-item div {
+        width: 23%;
+
+    }
     
 
-
 }
+
