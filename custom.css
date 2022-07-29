@@ -83,12 +83,18 @@ nav button:active, nav button:focus {
     width: 48%;   
 }
 #content-item div p {
-    height: 7em;
+    height: 8em;
 }
 
+.notice-wrapper div:first-child{
+    border-bottom: 2px solid #555;
+}
 
-
-
+tbody tr td:nth-child(2) {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
 
 
 
@@ -123,9 +129,10 @@ nav button:active, nav button:focus {
     }
     #content-item div {
         width: 23%;
-
     }
-    
+    #content-item div p {
+        height: 7em;
+    }
 
 }
 
