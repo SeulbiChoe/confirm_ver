@@ -76,7 +76,6 @@ nav button:active, nav button:focus {
 /* Article 영역 */
 #content-item {
     width: 100%;
-    background-color: aquamarine;
     margin: 0 auto;
 }
 #content-item div {
