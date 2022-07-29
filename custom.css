@@ -3,31 +3,57 @@
 * {
     margin: 0 !important;
     padding: 0 !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 #address {
     text-align: center;
 }
-
-#lnb {
-    font-size: 1em;
-
+nav {
+    height: 7vh;
+    background-color: yellow;
+    max-width: 1200px;
+}
+nav button {
+    border: none !important;
+    outline: none !important;
+}
+/*부트스트랩 속성 클릭할 때 나오는 border 삭제 */
+button:active, button:focus { 
+    border: none !important; 
+    box-shadow: none !important; 
+    outline: none !important;
 }
 
-#gnb {
-    font-size: 1em;
+#local-nav {
+    background-color: turquoise;
+    font-size: 0.95em;
+    border-top: 1px solid #ddd;
 }
-#gnb li:first-child a {
-    border-top: 1px solid #fff;
+#local-nav a{
+    color: #000;
 }
-.sub-menu {
-    position: initial;
-
+#global-nav {
+    font-size: 0.95em;
+    background-color: turquoise;
+}
+#global-nav a {
+    color: #000;
 }
 
 
 
+#banner-wrap {
+    width: 100vw;
+    height: 40vh;
+    background-color: violet;
+    margin-top: 7vh !important;
+}
+
+#banner-wrap img {
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -60,21 +86,17 @@
 
 
 /* Desktop */
-@media (min-width: 1024px) {
-    #lnb {
-        font-size: 0.95em;
-    }
-    #gnb {
-        font-size: 0.85em;
-    }
-    #gnb li:first-child a {
+@media (min-width: 992px) {
+    #local-nav {
         border-top: none;
+        line-height: 7vh;
     }
-    .sub-menu {
-        position: absolute;
-        background-color: teal;
-
+    #global-nav {
+        font-size: 0.85em;
+        line-height: 7vh;
     }
+    
+    
 
 
 }
