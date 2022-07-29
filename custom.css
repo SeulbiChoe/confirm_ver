@@ -95,7 +95,17 @@ tbody tr td:nth-child(2) {
     white-space:nowrap;
 }
 
+#aside-item {
+    width: 100%;
+    margin: 0 auto;
+}
 
+#aside-item div {
+    width: 49%;
+}
+#aside-item div p {
+    height: 6em;
+}
 
 
 
@@ -105,6 +115,9 @@ tbody tr td:nth-child(2) {
 @media (min-width: 768px) {
     #address {
         text-align: left;
+    }
+    #aside-item {
+        width: 90%;
     }
 
 
