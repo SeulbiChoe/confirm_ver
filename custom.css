@@ -16,11 +16,14 @@ body {
 
 nav {
     width: 100%;
+    height: auto;
     line-height: 3.8em;
     background-color: #fff;
+
 }
 nav > div {
     max-width: 1200px;
+    overflow-y: auto;
 }
 nav button {
     border: none !important;
@@ -245,4 +248,3 @@ tbody tr td:nth-child(2) {
     }
 
 }
-
