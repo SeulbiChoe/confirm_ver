@@ -10,44 +10,56 @@
     <link href="custom.css" rel="stylesheet">
 </head>
 <body>
-    <div id="wrap" style="width: 100%; margin: 0 auto; height: auto; background-color: antiquewhite;">
+    <div id="wrap" style="width: 100%; margin: 0 auto; height: auto; background-color: aliceblue;">
 
         <!-- GNB영역 -->
         <header class="container">
-          <nav class="navbar navbar-expand-lg fixed-top mx-auto fs-6 py-0 my-0">
-            <div class="container-fluid px-2 border-bottom border-dark" style="background-color: #fff;">
+          <nav class="navbar navbar-expand-lg fixed-top mx-auto fs-6 py-0 my-0 border-bottom border-dark">
+            <div class="container-fluid px-2">
               <a class="navbar-brand py-0" href="#"><img src="img/logo.png" style="height: 2.8em; line-height: 3.8em;"></a>
               <button class="navbar-toggler py-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mt-2  mb-lg-0 ps-4" id="local-nav">
-                  <li class="nav-item py-3 border-bottom py-lg-0">
-                    <a class="nav-link ps-lg-5 pe-lg-4" href="#">물리교육소개</a>
-                  </li>
-                  <li class="nav-item px-lg-4 py-3 py-lg-0">
-                    <a class="nav-link" href="#">원서접수</a>
-                  </li>
-                  <li class="nav-item dropdown px-lg-4 py-3 py-lg-0">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      자료실
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="navbar-nav me-auto mb-lg-0 px-3" id="local-nav">
+                  <li class="nav-item pt-3 py-lg-0">
+                    <a class="nav-link ps-lg-5 pe-lg-4 nav-title" href="#">물리교육 소개</a>
+                    <ul class="navbar-nav sub-menu px-lg-4">
+                      <li class="nav-item mobile-hide fw-bold pt-lg-2 pb-lg-3"><a class="nav-link" href="">물리교육 소개</a></li>
+                      <li class="nav-item"><a class="nav-link" href="">물리인증제</a></li>
+                      <li class="nav-item pb-lg-4 mb-lg-2"><a class="nav-link" href="">한국중학생물리대회</a></li>
                     </ul>
                   </li>
                   <li class="nav-item px-lg-4 py-3 py-lg-0">
-                    <a class="nav-link">알림사항</a>
+                    <a class="nav-link nav-title pt-4 pt-lg-2" href="#">원서접수</a>
+                    <ul class="navbar-nav sub-menu px-lg-4">
+                      <li class="nav-item mobile-hide fw-bold pt-lg-2 pb-lg-3"><a class="nav-link" href="">원서접수</a></li>
+                      <li class="nav-item"><a class="nav-link" href="">물리인증제 원서접수</a></li>
+                      <li class="nav-item pb-lg-4 mb-lg-2"><a class="nav-link" href="">한국중학생물리대회 원서접수</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item px-lg-4 py-3 py-lg-0 pt-0">
+                    <a class="nav-link nav-title pt-4 pt-lg-2" href="#">자료실</a>
+                    <ul class="navbar-nav sub-menu px-lg-4">
+                      <li class="nav-item mobile-hide fw-bold pt-lg-2 pb-lg-3"><a class="nav-link" href="">자료실</a></li>
+                      <li class="nav-item"><a class="nav-link" href="">물리인증제 자료실</a></li>
+                      <li class="nav-item pb-lg-4 mb-lg-2"><a class="nav-link" href="">한국중학생물리대회 자료실</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item px-lg-4 py-3 py-lg-0 pt-0">
+                    <a class="nav-link nav-title pt-4 pt-lg-2">알림사항</a>
+                    <ul class="navbar-nav sub-menu px-lg-4">
+                      <li class="nav-item mobile-hide fw-bold pt-lg-2 pb-lg-3"><a class="nav-link" href="">알림사항</a></li>
+                      <li class="nav-item"><a class="nav-link" href="">공지사항</a></li>
+                      <li class="nav-item pb-lg-4 mb-lg-2"><a class="nav-link" href="">교육/행사 일정</a></li>
+                    </ul>
                   </li>
                 </ul>
-                <ul class="navbar-nav ps-4" id="global-nav">
-                  <li class="nav-item px-lg-2 py-3 py-lg-0" style="background-color: tomato;"><a class="nav-link" href="#">로그인</a></li>
-                  <li class="nav-item px-lg-2 py-3 py-lg-0"><a class="nav-link" href="#">회원가입</a></li>
-                  <li class="nav-item px-lg-2 py-3 py-lg-0"><a class="nav-link" href="#">ContactUs</a></li>
-                  <li class="nav-item px-lg-2 py-3 py-lg-0"><a class="nav-link" href="#">사이트맵</a></li>
+                <ul class="navbar-nav px-3" id="global-nav">
+                  <li class="nav-item px-lg-2 py-1 py-lg-0 pt-3"><a class="nav-link" href="#">로그인</a></li>
+                  <li class="nav-item px-lg-2 py-1 py-lg-0"><a class="nav-link" href="#">회원가입</a></li>
+                  <li class="nav-item px-lg-2 py-1 py-lg-0"><a class="nav-link" href="#">ContactUs</a></li>
+                  <li class="nav-item px-lg-2 py-1 py-lg-0 pb-3"><a class="nav-link" href="#">사이트맵</a></li>
                 </ul>
               </div>
             </div>
@@ -237,7 +249,7 @@
           </article>
         </section>
 
-        <aside class="mt-3">
+        <aside class="mt-4">
           <div class="container fs-6 px-1">
             <div class="row row-cols-2 px-2 justify-content-between fw-bold" style="font-size: 0.85em;" id="aside-item">
               <div class="px-0">
@@ -316,6 +328,10 @@
       });
     });
 
+
+    $('#local-nav').on('click', function(){
+      $('.sub-menu').toggleClass('nav-show ')
+    })
     </script>
 </body>
 </html>

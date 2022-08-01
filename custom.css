@@ -16,39 +16,65 @@ body {
 
 nav {
     width: 100%;
-    max-width: 1200px;
     line-height: 3.8em;
+    background-color: #fff;
+}
+nav > div {
+    max-width: 1200px;
 }
 nav button {
     border: none !important;
     outline: none !important;
 }
+
 /*부트스트랩 속성 클릭할 때 나오는 border 삭제 */
 nav button:active, nav button:focus { 
     border: none !important; 
     box-shadow: none !important; 
     outline: none !important;
 }
-
 #local-nav {
-    line-height: 1em;
+    line-height: 0.95em;
+    border-top: 1px solid #ddd;
+    font-size: 0.95em;
 }
-
-
+#local-nav > li {
+    position: relative;
+}
+#local-nav a {
+    color: #000;
+}
 #global-nav {
-    line-height: 1em;
+    line-height: 0.95em;
+    font-size: 0.95em;
 }
 
+#global-nav a {
+    color: #000;
+}
+#local-nav .sub-menu {
+    position: inherit;
+    transition: all 0.3s;
+    /* opacity: 1;
+    visibility: visible; */
+}
+.mobile-hide {
+    display: none;
+}
+#global-nav li:first-child {
+    border-top: 1px solid #ddd;
+}
+#local-nav :not(li:nth-child(1)) .nav-title {
+    border-top: 1px solid #ddd;
+}
+#local-nav .nav-title {
+    font-weight: bold;
+}
 
-
-
-
-
-
+/* 배너 영역 */
 #banner-wrap {
     width: 100vw;
     height: auto;
-    background-color: violet;
     margin-top: 3.8em !important;
     text-align: center;
 }
@@ -59,20 +85,20 @@ nav button:active, nav button:focus {
 }
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
+}
    
-   .carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   }
-   .carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
     width: 24px;
     height: 24px;
-    }
-   .carousel .carousel-indicators button {
+}
+.carousel .carousel-indicators button {
     width: 10px;
-   height: 10px;
-   border-radius: 50%;
- }
+    height: 10px;
+    border-radius: 50%;
+}
 
 
 
@@ -160,16 +186,56 @@ tbody tr td:nth-child(2) {
 @media (min-width: 992px) {
     #local-nav {
         border-top: none;
-        line-height: 7vh;
+        font-size: 0.9em;
     }
     #global-nav {
         font-size: 0.85em;
-        line-height: 7vh;
     }
-
-    #banner-wrap img {
-        /* height: 40vh; */
-        /* width: 100%; */
+    #local-nav .sub-menu {
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-top: 0;
+        left: -20%;
+        width: fit-content;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9;
+    }
+    .nav-show {
+        opacity: 1 !important;
+        visibility: visible !important;
+        top: 155% !important;
+    }
+    #local-nav li:nth-child(1) .sub-menu {
+        border-right: none;
+    }
+    #local-nav li:nth-child(2) .sub-menu {
+        border-right: none;
+        transform: translateX(21px);
+    } 
+    #local-nav li:nth-child(3) .sub-menu {
+        border-right: none;
+        transform: translateX(142px);
+    }
+    #local-nav li:nth-child(4) .sub-menu {
+        border-right: none;
+        transform: translateX(268px);
+    }
+    #local-nav :not(li:nth-child(1)) .nav-title {
+        border-top: none;
+    }
+    #global-nav li:first-child {
+        border-top: none;
+    }
+    #local-nav .nav-title {
+        font-weight: normal;
+    }
+    .mobile-hide {
+        display: block;
     }
     #content-item div {
         width: 23%;
