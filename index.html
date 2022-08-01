@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title>물리학회29 after</title>
+    <title>물리학회 0801</title>
     <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
     <link href="bootstrap-5.2.0-dist/css/bootstrap.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
 </head>
 <body>
-    <div id="wrap" style="width: 100vw; height: auto; background-color: aliceblue;">
+    <div id="wrap" style="width: 100%; margin: 0 auto; height: auto; background-color: antiquewhite;">
 
         <!-- GNB영역 -->
         <header class="container">
-
-
-          <nav class="navbar navbar-expand-lg fixed-top mx-auto fs-6">
+          <nav class="navbar navbar-expand-lg fixed-top mx-auto fs-6 py-0 my-0">
             <div class="container-fluid px-2 border-bottom border-dark" style="background-color: #fff;">
-              <a class="navbar-brand" href="#"><img src="img/logo.png" style="height: 7vh;"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand py-0" href="#"><img src="img/logo.png" style="height: 2.8em; line-height: 3.8em;"></a>
+              <button class="navbar-toggler py-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-4" id="local-nav">
+                <ul class="navbar-nav me-auto mt-2  mb-lg-0 ps-4" id="local-nav">
                   <li class="nav-item py-3 border-bottom py-lg-0">
                     <a class="nav-link ps-lg-5 pe-lg-4" href="#">물리교육소개</a>
                   </li>
@@ -62,7 +60,7 @@
         </header>
 
         <!-- 배너 영역 -->
-        <section id="banner-wrap" class="">
+        <section id="banner-wrap" class="" style="width: 100%;">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -97,7 +95,7 @@
         <!-- Article 영역 -->
 
         <!-- 카드영역 -->
-        <section class="mt-3" style="width: 100vw;">
+        <section class="mt-3" style="width: 100%;">
           <article>
               <div class="container fs-6 px-1">
                 <div class="row row-cols-lg-4 row-cols-2 px-2 justify-content-between fw-bold" style="font-size: 0.85em;" id="content-item">
@@ -259,7 +257,9 @@
 
 
         <!-- 맨위로 -->
-        <a class="go-top d-inline-block border border-secondary"></a>
+        <a class="go-top d-inline-block border border-secondary">
+          <span class="d-block"></span>
+        </a>
 
 
 
@@ -270,10 +270,10 @@
                 <div class="row row-cols-1">
                     <div class="col-12 col-md-4 col-lg-3 py-2 py-md-0 my-md-auto">
                         <div class="row row-cols-2 d-inline-flex w-100 text-center align-items-center justify-content-center">
-                            <h3 class="col-auto fw-normal text-center">KPS</h3>
+                            <h3 class="col-auto fw-normal text-center mb-0">KPS</h3>
                             <div class="col-auto fs-6 ps-2">
                                 <h5 class="fw-semibold mb-0 ps-2" style="letter-spacing: 0.5em; font-size: 1.1em;">한국물리학회</h5>
-                                <p style="font-size: 0.7em;" class="fw-semibold">The Korean Physical Society</p>
+                                <p style="font-size: 0.7em;" class="fw-semibold mb-0">The Korean Physical Society</p>
                             </div>
                         </div>
                     </div>
@@ -301,7 +301,20 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
 
-
+    $(function(){
+      $('.go-top').on('click',function(e){
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, 100);
+      });
+      
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+          $('.go-top').addClass('show');
+        } else {
+          $('.go-top').removeClass('show');
+        }
+      });
+    });
 
     </script>
 </body>

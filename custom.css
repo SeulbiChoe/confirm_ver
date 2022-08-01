@@ -6,13 +6,18 @@
     box-sizing: border-box !important; */
 }
 
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 #address {
     text-align: center;
 }
+
 nav {
-    height: 7vh;
-    background-color: yellow;
+    width: 100%;
     max-width: 1200px;
+    line-height: 3.8em;
 }
 nav button {
     border: none !important;
@@ -26,26 +31,25 @@ nav button:active, nav button:focus {
 }
 
 #local-nav {
-    background-color: turquoise;
-    font-size: 0.95em;
-    border-top: 1px solid #ddd;
+    line-height: 1em;
 }
-#local-nav a{
-    color: #000;
-}
+
+
 #global-nav {
-    font-size: 0.95em;
-    background-color: turquoise;
+    line-height: 1em;
 }
-#global-nav a {
-    color: #000;
-}
+
+
+
+
+
+
 
 #banner-wrap {
     width: 100vw;
     height: auto;
     background-color: violet;
-    margin-top: 7vh !important;
+    margin-top: 3.8em !important;
     text-align: center;
 }
 
@@ -118,22 +122,27 @@ tbody tr td:nth-child(2) {
     right: 30px;
     transition: background-color .3s, 
     opacity .5s, visibility .5s;
-    /* opacity: 0; */
-    /* visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     z-index: 1000;
 }
 
-.go-top::after {
-    content: "";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
+.go-top span {
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #555;
+    border-right: 5px solid #555;
+    border-radius: 15%;
+    position: fixed;
+    bottom: 35px;
+    right: 40px;
+    transform: rotate(-45deg);
+}
 
-
+.show {
+    opacity: 1;
+    visibility: visible;
+}
 /* Tablet */
 @media (min-width: 768px) {
     #address {
