@@ -15,11 +15,9 @@ body {
 }
 
 nav {
-    width: 100%;
     height: auto;
     line-height: 3.8em;
     background-color: #fff;
-
 }
 nav > div {
     max-width: 1200px;
@@ -191,6 +189,9 @@ tbody tr td:nth-child(2) {
         border-top: none;
         font-size: 0.9em;
     }
+    nav > div {
+        overflow-y: hidden;
+    }
     #global-nav {
         font-size: 0.85em;
     }
@@ -237,6 +238,7 @@ tbody tr td:nth-child(2) {
     #local-nav .nav-title {
         font-weight: normal;
     }
+    
     .mobile-hide {
         display: block;
     }

@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+html, body {
+    width: 100%;
+}
+
+/* Nav 영역 */
+header {
+    margin-bottom: 62px;
+}
+.nav-wrapper {
+    background-color: #fff;
+    width: 100%;
+}
+.nav-wrapper > div:first-child {
+    max-width: 1200px;
+}
+.nav-wrapper .nav-btn {
+    border: 0;
+    outline: 0;
+}
+.nav-wrapper .lnb {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    overflow-y: auto;
+    transition: right 0.3s;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    box-shadow: -5px 5px 5px -6px #555;
+}
+.nav-wrapper .lnb img {
+    height: 2.9em;
+}
+.nav-wrapper .lnb .lnb-img {
+    border-bottom: 1px solid #ddd;
+}
+.nav-open {
+    right: 0 !important;
+}
+.lnb-desktop-menu {
+    display: none;
+}
+
+/* tablet 해상도 */
+@media (min-width: 768px) { 
+    .nav-wrapper .lnb {
+        width: 50%;
+    }
+
+} 
+
+
+/* desktop 해상도 */
+@media (min-width: 992px) {
+    header {
+        margin-bottom: 6em;
+    }
+    .nav-wrapper {
+        border-bottom: 1px solid #ddd;
+    }
+    .nav-wrapper > div:first-child {
+        display: none;
+    }
+    .nav-wrapper .lnb {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 6em;
+        position: initial;
+        display: flex;
+        border-left: none;
+        box-shadow: none;
+    }
+    .nav-wrapper .lnb img {
+        height: 3.8em;
+    }
+    .nav-wrapper .lnb li {
+        line-height: 6em;
+    }
+    .nav-wrapper .lnb ul li:first-child {
+        border-bottom: none;
+    }
+    .nav-wrapper .lnb .gnb {
+        font-size: 0.85em;
+        align-items: center;
+    }
+    .sub-menu {
+        display: none;
+    }
+    .lnb-desktop-menu {
+        display: none;
+        width: 100%;
+        position: absolute; 
+        top: 101%;
+        background-color: #fff;
+        box-shadow:  0 4px 4px -4px #555;
+    }
+    .lnb-desktop-menu div {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .lnb-desktop-menu div ul {
+        width: 25%;
+        border-left: 1px solid #ddd;
+    }
+    .lnb-desktop-menu div ul li:not(:first-child) {
+        font-size: 0.95em;
+    }
+    .lnb-desktop-menu div ul:last-child {
+        border-right: 1px solid #ddd;
+    }
+    .nav-wrapper .lnb li a:hover {
+        color: royalblue;
+    }
+    .lnb-desktop-menu a:hover {
+        color: royalblue;
+    }
+} 
