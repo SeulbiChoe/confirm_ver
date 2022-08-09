@@ -1,10 +1,8 @@
 
-    
-
     document.write(`
     <header class="fs-6 nav-wrapper fixed-top navbar-expand-lg">
             <div class="container-fluid py-0 px-3 navbar border-bottom">
-                <a class="navbar-brand py-2" href="#"><img src="img/logo.png" style="height: 2.3em;"></a>
+                <a class="navbar-brand py-2" href="./index.html"><img src="img/logo.png" style="height: 2.3em;"></a>
                 <button class="navbar-toggler px-0 nav-btn" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,15 +25,15 @@
                     <li><a href="" class="nav-link py-lg-0">한국중학생물리대회 자료실</a></li>
                 </ul>
                 <ul class="navbar-nav flex-column ps-lg-4 pt-lg-4 pb-lg-5">
-                    <li><a href="" class="nav-link fw-bold">알림사항</a></li>
-                    <li><a href="" class="nav-link">공지사항</a></li>
-                    <li><a href="" class="nav-link py-lg-0">교육/행사 일정</a></li>
+                    <li><a href="./notice.html" class="nav-link fw-bold">알림사항</a></li>
+                    <li><a href="./notice.html" class="nav-link">공지사항</a></li>
+                    <li><a href="./schedule_notice.html" class="nav-link py-lg-0">교육/행사 일정</a></li>
                 </ul>
             </div>
         </nav>
         <nav class="fs-6 lnb">
                 <ul class="navbar-nav lnb-menu">
-                    <li class="py-2 py-lg-0 ps-3 lnb-img"><a href="#"><img src="./img/logo.png"></a></li>
+                    <li class="py-2 py-lg-0 ps-3 lnb-img"><a href="./index.html"><img src="./img/logo.png"></a></li>
                     <li class="ps-lg-5 pe-lg-0 mt-3 mt-lg-0">
                         <a href="" class="nav-link ps-4 px-lg-4 py-lg-0 fw-bold">물리교육 소개</a>
                         <ul class="navbar-nav sub-menu">
@@ -58,10 +56,10 @@
                         </ul>
                     </li>
                     <li class="mt-3 mb-1 my-lg-0">
-                        <a href="" class="nav-link ps-4 py-lg-0 px-lg-4 fw-bold">알림사항</a>
+                        <a href="./notice.html" class="nav-link ps-4 py-lg-0 px-lg-4 fw-bold">알림사항</a>
                         <ul class="navbar-nav sub-menu">
-                            <li><a href="" class="nav-link ps-4 ">공지사항</a></li>
-                            <li class="border-bottom pb-4"><a href="" class="nav-link ps-4 py-0">교육/행사 일정</a></li>
+                            <li><a href="./notice.html" class="nav-link ps-4 ">공지사항</a></li>
+                            <li class="border-bottom pb-4"><a href="./schedule_notice.html" class="nav-link ps-4 py-0">교육/행사 일정</a></li>
                         </ul>
                     </li>
                 </ul>

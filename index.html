@@ -4,340 +4,255 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title>교육/행사 일정</title>
+    <title>물리학회 0809</title>
     <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="fullcalendar/lib/main.min.js"></script>
-    <link href="fullcalendar/lib/main.min.css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
     <link href="bootstrap-5.2.0-dist/css/bootstrap.css" rel="stylesheet">
-    <link href="css/schedule_notice_custom.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <link href="css/nav_custom.css" rel="stylesheet">
 </head>
 <body>
-    <div id="wrap">
+    <div id="wrap" style="width: 100%; margin: 0 auto; height: auto;">
 
         <!-- GNB영역 -->
-        <header id="header"></header>
+        <header>
+          <script src="./js/nav.js"></script>
+        </header>
 
-        <section class="menu-section mx-auto">
-          <div class="container-fluid menu-btn-wrapper pt-5 ps-lg-4 fs-6">
-              <div class="row mx-auto">
-                  <div class="col-6 col-lg-3 py-2 border"><button type="button" class="btn fw-bold ps-1 ps-md-2 w-100 text-start text-secondary " onClick="location.href='notice.html'">공지사항</button></div>
-                  <div class="col-6 col-lg-3 py-2 border"><button type="button" class="btn fw-bold ps-1 ps-md-2 w-100 text-start" onClick="location.href='schedule_notice.html'">교육/행사 일정</button></div>
+        <!-- 배너 영역 -->
+        <section id="banner-wrap" class="" style="width: 100%;">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button class="mx-3" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banner_img_1.jpg" alt="banner-1">
               </div>
+              <div class="carousel-item">
+                <img src="img/banner_img_2.jpg" alt="banner-2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner_img_1.jpg" alt="banner-3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </section>
 
-
-
-      <!-- main section 영역 -->
-      <section class="main-section-wrapper mx-auto fs-6 mt-5">
-
-        <div class="container-fluid table-wrapper pt-4">
-          <h4 class="fs-5 fw-bold border-bottom border-2 border-darkgrey pb-3 px-2 px-lg-4 mb-0">교육/행사 일정</h4>
-          <div class="calendar-btn pe-3">
-            <button type="button" class="btn fw-bold py-1 px-3 rounded-2 text-light" style="background-color: darkorange;">달력보기</button>
-          </div>
-
-        <div class="notice-list">
-          <!-- 목록보기 영역 -->
-          <div class="table-responsive-md">
-            <table class="table">
-              <thead class="text-center border-bottom border-2 border-darkgrey" >
-                <tr>
-                  <th class="py-3">번호</th>
-                  <th></th>
-                  <th class="py-3">행사일</th>
-                  <th class="py-3">교육/행사명</th>
-                </tr>
-              </thead>
-              <tbody class="text-center border-darkgrey">
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block py-1 px-1 rounded-5 type-homeground">국내</span></td>
-                  <td class="py-3">2022-07-25 ~ 2022-07-29</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내</td>
-                </tr>
-                <tr>
-                  <td class="py-3 text-center">12</td>
-                  <td class="fw-bold align-middle"><span class="d-block text-light py-1 px-1 rounded-5 type-overseas">국외</span></td>
-                  <td class="py-3">2022-07-26</td>
-                  <td class="text-start py-3 ps-3" onClick="location.href='schedule_notice_detail.html'">[기초과학연구원] 2022 ACS(Asian Science Camp) 학생 모집 안내 및 응시자 가이드 안내</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Pagination 영역 -->
-          <div class="pagination-wrapper mx-auto w-75 fs-6 my-4">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center">
-                <li class="page-item pagination-icon">
-                  <a class="page-link" href="#">
-                    <span aria-hidden="true">&lt;</span>
-                  </a>
-                </li>
-                <li class="page-item pagination-icon">
-                  <a class="page-link" href="#">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="page-item me-1"><a class="page-link pagination-active" href="#">1</a></li>
-                <li class="page-item me-1"><a class="page-link" href="#">2</a></li>
-                <li class="page-item me-1"><a class="page-link" href="#">3</a></li>
-                <li class="page-item me-1"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item pagination-icon">
-                  <a class="page-link" href="#">
-                    <span aria-hidden="true">&gt;</span>
-                  </a>
-                </li>
-                <li class="page-item pagination-icon">
-                  <a class="page-link" href="#">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-      </div>
-
-        
-
-        <!-- 달력보기 영역 -->
-            <div class="calendar-content fs-6 mt-5 mt-lg-3 container-fluid px-0 pb-3">
-              <form>
-                <input type="month">
-              </form>
-                  <div class="month-calendar-wrapper row pb-4 mx-0">
-                      <h5 class="col-12 mobile-schedule-title mt-3 mb-0 border-bottom py-3 border-darkgrey fw-bold">2022년 08월 행사 일정</h5>
-                      <div class="calendar-wrap col-12 col-md-5 col-lg-4 order-md-first px-0 ms-lg-0 mx-auto mt-2">
-                          <div id="now-calendar"></div>
-                      </div>
-                      <div class="schedule-content col-12 col-md-7 col-lg-8 px-1">
-                          <h5 class="mb-0 border-bottom border-2 border-darkgrey pb-4 ps-3 pt-4 fw-bold tablet-schedule-title">2022년 08월 행사 일정</h5>
-                          <div class="d-flex mt-4 mt-lg-5 align-items-center">
-                              <p class="mb-0"><span>2022-08-13 <br> 2022-08-15</span></p>
-                              <p class="mb-0 d-inline text-darkblue ms-3">한국물리학회 일반인들의 물리학 이해를 위한 기초 물리학 무료 강의</p>
-                          </div>
-                          <div class="d-flex mt-3 align-items-center">
-                              <p class="mb-0">2022-08-13</p>
-                              <p class="mb-0 d-inline text-darkblue ms-3">2022년 2차 물리인증제</p>
-                          </div>
-                      </div>
+        <!-- Article 영역 -->
+        <!-- 카드영역 -->
+        <section class="mt-3" style="width: 100%;">
+          <article>
+              <div class="container fs-6 px-1">
+                <div class="row row-cols-lg-4 row-cols-2 px-2 justify-content-between fw-bold" style="font-size: 0.85em;" id="content-item">
+                  <div class="px-0">
+                    <p class="border border-secondary d-flex justify-content-center align-items-center" style="background-color: rgb(250, 250, 250);">
+                      2022년 <br> 한국중학생물리대회 <br> 원서접수
+                    </p>
                   </div>
-
-                  <div class="month-calendar-wrapper row pb-4 mx-0 border-top py-2">
-                    <h5 class="col-12 mobile-schedule-title mt-3 mb-0 border-bottom py-3 border-darkgrey fw-bold">2022년 09월 행사 일정</h5>
-                    <div class="calendar-wrap col-12 col-md-5 col-lg-4 order-md-first px-0 ms-lg-0 mx-auto mt-2">
-                        <div id="next-calendar"></div>
-                    </div>
-                    <div class="schedule-content col-12 col-md-7 col-lg-8 px-1">
-                        <h5 class="mb-0 border-bottom border-2 border-darkgrey pb-4 ps-3 pt-4 fw-bold tablet-schedule-title">2022년 09월 행사 일정</h5>
-                        <div class="d-flex mt-4 mt-lg-5 align-items-center">
-                            <p class="mb-0"><span>2022-08-13 <br> 2022-08-15</span></p>
-                            <p class="mb-0 d-inline text-darkblue ms-3">한국물리학회 일반인들의 물리학 이해를 위한 기초 물리학 무료 강의</p>
-                        </div>
-                        <div class="d-flex mt-3 align-items-center">
-                            <p class="mb-0">2022-08-13</p>
-                            <p class="mb-0 d-inline text-darkblue ms-3">2022년 2차 물리인증제</p>
-                        </div>
-                    </div>
+                  <div class="px-0">
+                    <p class="border border-secondary d-flex justify-content-center align-items-center" style="background-color: rgb(250, 250, 250);">
+                      2022년 <br> 물리인증제 원서접수
+                    </p>
                   </div>
-
-                  <div class="month-calendar-wrapper row pb-4 mx-0 border-top py-2">
-                    <h5 class="col-12 mobile-schedule-title mt-3 mb-0 border-bottom py-3 border-darkgrey fw-bold">2022년 10월 행사 일정</h5>
-                    <div class="calendar-wrap col-12 col-md-5 col-lg-4 order-md-first px-0 ms-lg-0 mx-auto mt-2">
-                        <div id="after-next-calendar"></div>
-                    </div>
-                    <div class="schedule-content col-12 col-md-7 col-lg-8 px-1">
-                        <h5 class="mb-0 border-bottom border-2 border-darkgrey pb-4 ps-3 pt-4 fw-bold tablet-schedule-title">2022년 10월 행사 일정</h5>
-                        <div class="d-flex mt-4 mt-lg-5 align-items-center">
-                            <p class="mb-0"><span>2022-08-13 <br> 2022-08-15</span></p>
-                            <p class="mb-0 d-inline text-darkblue ms-3">한국물리학회 일반인들의 물리학 이해를 위한 기초 물리학 무료 강의</p>
-                        </div>
-                        <div class="d-flex mt-3 align-items-center">
-                            <p class="mb-0">2022-08-13</p>
-                            <p class="mb-0 d-inline text-darkblue ms-3">2022년 2차 물리인증제</p>
-                        </div>
-                    </div>
+                  <div class="px-0">
+                    <p class="border border-secondary d-flex justify-content-center align-items-center" style="background-color: rgb(250, 250, 250);">
+                      한국중학생물리대회 <br> 상장 신청 바로가기
+                    </p>
                   </div>
+                  <div class="px-0">
+                    <p class="border border-secondary d-flex justify-content-center align-items-center" style="background-color: rgb(250, 250, 250);">
+                      물리인증제 <br> 인증서 신청 바로가기
+                    </p>
+                  </div>
+                </div>
               </div>
-          </div>
-      </section>
+          </article>
+        </section>
 
+        <!-- 공지사항/일정 영역 -->
+        <section class="mt-5">
+          <article>
+            <div class="container fs-6">
+              <div class="row px-1">
+                <!-- 공지사항 -->
+                <div class="col-12 col-md-6">
+                  <div class="row px-2 notice-wrapper">
+                    <div class="col-12 d-flex justify-content-between py-3 fs-6 px-3">
+                      <h4 class="mb-0" style="font-size: 1.25em;">공지사항</h4>
+                      <p class="mb-0 pt-1 text-secondary" style="font-size: 0.8em;"><a href="./notice.html">더보기</a></p>
+                    </div>
+                    <div class="col-12 fs-6 px-0">
+                      <table class="table table-borderless mb-0" style="table-layout: fixed;">
+                        <tbody>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color: darkorange; font-size: 0.95em;">중요</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">[2022년 2차 물리인증제] 신분증 미지참자 dklaksdlkslkl</td>
+                          </tr>
+                          <tr class="border-bottom">
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color: darkorange; font-size: 0.95em;">중요</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">[2022년 2차 물리인증제] 신분증 미지참자 dklaksdlkslkl</td>
+                          </tr>
+                          <tr class="border-bottom">
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color: rgb(145, 145, 145); font-size: 0.95em;">일반</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">[2022년 2차 물리인증제] 신분증 미지참자 dklaksdlkslkl</td>
+                          </tr>
+                          <tr class="border-bottom">
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color:  rgb(145, 145, 145); font-size: 0.95em;">일반</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">[2022년 2차 물리인증제] 신분증 미지참자 dklaksdlkslkl</td>
+                          </tr>
+                          <tr">
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 일정 -->
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                  <div class="row px-2 notice-wrapper">
+                    <div class="col-12 d-flex justify-content-between py-3 fs-6 px-3">
+                      <h4 class="mb-0" style="font-size: 1.25em;">교육/행사 일정</h4>
+                      <p class="mb-0 pt-1 text-secondary" style="font-size: 0.8em;"><a href="./schedule_notice.html">더보기</a></p>
+                    </div>
+                    <div class="col-12 fs-6 px-0">
+                      <table class="table table-borderless mb-0" style="table-layout: fixed;">
+                        <tbody>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color: darkorange; font-size: 0.95em;">icon</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">2022년 한국중학생물리대회</td>
+                          </tr>
+                          <tr class="border-bottom">
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color: darkorange; font-size: 0.95em;">icon</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">2022년 2차 물리인증제</td>
+                          </tr>
+                          <tr class="border-bottom">
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color: rgb(145, 145, 145); font-size: 0.95em;">icon</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">2021년 한국중학생물리대회</td>
+                          </tr>
+                          <tr class="border-bottom">
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2" class="col-3 col-lg-2 text-center align-middle">
+                              <p class="mt-3 rounded-5 px-2 py-1 d-inline text-light fw-semibold" style="background-color:  rgb(145, 145, 145); font-size: 0.95em;">icon</p>
+                              </td>
+                            <td class="pb-0 fw-light d-block" style="font-size: 0.9em; ">2022년 1차 물리인증제</td>
+                          </tr>
+                          <tr>
+                            <td class="pt-0 fw-light" style="font-size: 0.9em;">2022-07-25</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <aside class="mt-4">
+          <div class="container fs-6 px-1">
+            <div class="row row-cols-2 px-2 justify-content-between fw-bold" style="font-size: 0.85em;" id="aside-item">
+              <div class="px-0">
+                <p class="border border-secondary d-flex justify-content-center align-items-center" style="background-color: rgb(250, 250, 250);">
+                  KPho 한국물리올림피아드
+                </p>
+              </div>
+              <div class="px-0">
+                <p class="border border-secondary d-flex justify-content-center align-items-center" style="background-color: rgb(250, 250, 250);">
+                  KPS 한국물리학회
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- 맨위로 -->
+        <a class="go-top d-inline-block border border-secondary">
+          <span class="d-block"></span>
+        </a>
+
+
+        <!-- Footer 영역 -->
+        <footer>
+          <script src="./js/footer.js"></script>
+        </footer>
     </div>
 
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="./js/nav.js"></script>
     <script type="text/javascript">
-        $('.calendar-btn button').click(function(){
-            if( $(this).html() == "달력보기" ) {
-                $(this).html("목록보기");
-                $('.notice-list').hide();
-                $('.calendar-content').show();
-            } else {
-                $(this).html("달력보기");
-                $('.calendar-content').hide();
-                $('.notice-list').show();
-            }
-        });
 
-    //Full Calendar
-        var now = new Date();
-        var m = now.getMonth();
-        var y = now.getFullYear();
+    $(function(){
+      $('.go-top').on('click',function(e){
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, 100);
+      });
+      
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+          $('.go-top').addClass('show');
+        } else {
+          $('.go-top').removeClass('show');
+        }
+      });
+    });
 
-        // 이번 달
-        document.querySelector('.calendar-btn button').addEventListener('click', function () {
-            var calendarEl = document.getElementById('now-calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                timeZone: 'local',
-                contentHeight: "auto",
-                locale: "en",
-                headerToolbar: {
-                    left: '',
-                    center: '',
-                    right: ''
-                },
-                initialView: 'dayGridMonth', 
-                events:[
-                    {
-                        start: '2022-08-12',
-                        end: '2022-08-20',
-                        url: 'http://google.com/', //상세 페이지 기입
-                    },                    
-                    {
-                        start: '2022-08-10',
-                        url: 'http://google.com/', //상세 페이지 기입
-                    }
-                ],
-                editable: false, 
-                dayHeaderContent: function (date) {
-                    let weekList = ["일", "월", "화", "수", "목", "금", "토"];
-                    return weekList[date.dow];
-                    },
-                fixedWeekCount: false,
-                titleFormat: function(date) {
-                    return `${date.date.year}년 ${date.date.month + 1}월`;
-                    }
-            });
-              calendar.render()
-        });
 
-        // 다음 달
-        document.querySelector('.calendar-btn button').addEventListener('click', function () {
-            var calendarEl = document.getElementById('next-calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                timeZone: 'UTC',
-                initialDate: new Date(Date.UTC(y,m+1)),
-                contentHeight: "auto",
-                locale: "en",
-                headerToolbar: {
-                    left: '',
-                    center: '',
-                    right: ''
-                },
-                initialView: 'dayGridMonth', 
-                events:[
-                    {
-                        start: '2022-09-11',
-                        end: '2022-09-13',
-                        url: 'http://google.com/', //상세 페이지 기입
-                    },                    
-                    {
-                        start: '2022-09-28',
-                        url: 'http://google.com/', //상세 페이지 기입
-                    }
-                ],
-                editable: true, // false로 변경 시 draggable 작동 x 
-                dayHeaderContent: function (date) {
-                    let weekList = ["일", "월", "화", "수", "목", "금", "토"];
-                    return weekList[date.dow];
-                    },
-                fixedWeekCount: false,
-                titleFormat: function(date) {
-                    return `${date.date.year}년 ${date.date.month + 1}월`;
-                    }
-            });
-            calendar.render();
-        });
+    $('#local-nav').on('click', function(){
+      $('.sub-menu').toggleClass('nav-show ')
+    })
 
-        //다다음달
-        document.querySelector('.calendar-btn button').addEventListener('click', function () {
-            var calendarEl = document.getElementById('after-next-calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                timeZone: 'UTC',
-                initialDate: new Date(Date.UTC(y,m+2)),
-                contentHeight: "auto",
-                locale: "en",
-                headerToolbar: {
-                    left: '',
-                    center: '',
-                    right: ''
-                },
-                initialView: 'dayGridMonth', 
-                events:[ ],
-                editable: true, // false로 변경 시 draggable 작동 x 
-                dayHeaderContent: function (date) {
-                    let weekList = ["일", "월", "화", "수", "목", "금", "토"];
-                    return weekList[date.dow];
-                    },
-                fixedWeekCount: false,
-                titleFormat: function(date) {
-                    return `${date.date.year}년 ${date.date.month + 1}월`;
-                    }
-            });
-            calendar.render();
-        });
+
+    function navActive () {
+      if ($('nav').hasClass('close-nav') === true) {
+        $('nav').addClass('fixed-top');
+      }
+
+    }
+
+
     </script>
 </body>
 </html>

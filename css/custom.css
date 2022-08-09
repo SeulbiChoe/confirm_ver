@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* 배너 영역 */
+#banner-wrap {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+}
+
+#banner-wrap img {
+    max-width: 100%;
+    height: auto;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 24px;
+    height: 24px;
+}
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Article 영역 */
+#content-item {
+    width: 100%;
+    margin: 0 auto;
+}
+#content-item div {
+    width: 48%;   
+}
+#content-item div p {
+    height: 8em;
+}
+.notice-wrapper p a {
+    text-decoration: none;
+}
+.notice-wrapper div:first-child{
+    border-bottom: 2px solid #555;
+}
+
+tbody tr td:nth-child(2) {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+#aside-item {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#aside-item div {
+    width: 49%;
+}
+#aside-item div p {
+    height: 6em;
+}
+
+/* 맨위로 */
+.go-top {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(250, 250, 250);;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+.go-top span {
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #555;
+    border-right: 5px solid #555;
+    border-radius: 15%;
+    position: fixed;
+    bottom: 35px;
+    right: 40px;
+    transform: rotate(-45deg);
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+/* Tablet */
+@media (min-width: 768px) {
+    #aside-item {
+        width: 90%;
+    }
+
+
+}
+
+
+/* Desktop */
+@media (min-width: 992px) {
+
+    #content-item div {
+        width: 23%;
+    }
+    #content-item div p {
+        height: 7em;
+    }
+
+}
