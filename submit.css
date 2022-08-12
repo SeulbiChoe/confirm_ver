@@ -1,0 +1,277 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+html, body {
+    width: 100%;
+}
+.hidden{
+    overflow: hidden;
+    border: 0;
+    width: 0;
+    height: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    display: inline-block;
+  }
+  /* 해당 메뉴 활성화 */
+.lnb-menu > li:nth-child(3) > a {
+    color: royalblue !important;
+}
+/* Sub Banner 백그라운드 이미지 */
+.sub-banner {
+    background: url(../img/sub_banner.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+}
+/* Tab Menu */
+.tab-menu-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+.tab-menu-btn-wrapper .row {
+    width: 95%;
+    position: absolute;
+    font-size: 0.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+}
+.tab-menu-btn-wrapper .row > div:nth-child(2) {
+    margin-left: -1px;
+}
+/************ main section 영역 ************/
+
+/* First Tab Menu의 Section */
+.first-tab-wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Sub Menu */
+.sub-img {
+    width: 100%;
+    max-width: 1200px;
+    height: 15vh;
+    margin: 0 auto;
+    background: url(../img/sub_img.jpg) center no-repeat;
+    background-size: cover;
+}
+.sub-img h2 {
+    line-height: 15vh;
+}
+.sub-menu-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    white-space: nowrap;
+}
+.sub-menu-wrapper li a {
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.first-tab-wrap .sub-menu-wrapper li {
+    list-style: none;
+    flex: calc(100% / 3);
+}
+.first-tab-wrap .sub-menu-wrapper li:not(:first-child, :nth-child(4)) {
+    margin-left: -1px;
+}
+.first-tab-wrap .sub-menu-wrapper li:nth-child(4),
+.first-tab-wrap .sub-menu-wrapper li:nth-child(5) {
+    margin-top: -1px;
+}
+.second-tab-wrap .sub-menu-wrapper li {
+    list-style: none;
+    flex: 50%;
+}
+.second-tab-wrap .sub-menu-wrapper li:not(:nth-child(odd)) {
+    margin-left: -1px;
+}
+.second-tab-wrap .sub-menu-wrapper li:nth-child(3),
+.second-tab-wrap .sub-menu-wrapper li:nth-child(4) {
+    margin-top: -1px;
+}
+/* Section */
+.contents-wrapper section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 접수 일정 없음 */
+#cant-submit {
+    display: none;
+}
+#cant-submit .row div {
+    width: auto;
+    margin: 0 auto;
+}
+/************ Contents Wrap ************/
+.title-btn-wrap {
+    position: relative;
+}
+.title-btn-wrap button {
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+/* 전형일정 영역 */
+.schedule-table-wrapper table {
+    width: 200%;
+    table-layout: fixed;
+    font-size: 0.9em;
+}
+.schedule-table-wrapper > table thead th:first-child {
+    width: 120px;
+}
+.schedule-table-wrapper > table thead th:last-child {
+    width: 260px;
+}
+.schedule-table-wrapper > table tbody td:first-child {
+    text-align: center;
+}
+.small-table {
+    font-size: 1em !important;
+}
+.small-table td:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+.small-table tr:nth-child(2) td {
+    border-color: #ddd;
+}
+/* 모집단위 응시자격 영역 */
+.pro-table-wrapper table {
+    width: 200%;
+    table-layout: fixed;
+    font-size: 0.9em;
+}
+.pro-table-wrapper table thead th:first-child {
+    width: 120px;
+}
+.pro-table-wrapper table thead th:nth-child(2) {
+    width: 200px;
+}
+
+.pro-table-wrapper table tbody td:first-child {
+    text-align: center;
+    height: 80px;
+}
+.normal-table-wrapper table {
+    width: 150%;
+    table-layout: fixed;
+    font-size: 0.9em;
+}
+.normal-table-wrapper table thead th:first-child {
+    width: 100px;
+}
+.normal-table-wrapper table thead th:nth-child(2) {
+    width: 60px;
+}
+.normal-table-wrapper table thead th:last-child {
+    width: 150px;
+}
+.normal-table-wrapper table tbody td:first-child {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ Class 추가 ************/
+div .border-darkgrey {
+    border-color: #555 !important;
+}
+/* btn active */
+.active {
+    background-color: #fff;
+    color: #000;
+}
+.inactive {
+    background-color: #e9e9e9;
+    color: #6c757d;
+}
+table .table-striped-bgc {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/************ tablet 해상도 ************/
+@media (min-width: 768px) {
+    /* Sub Menu */
+    .first-tab-wrap .sub-menu-wrapper li:nth-child(4) {
+        margin-left: 0;
+    }
+    .second-tab-wrap .sub-menu-wrapper li {
+        flex: 1;
+    }
+    .second-tab-wrap .sub-menu-wrapper li:nth-child(3),
+    .second-tab-wrap .sub-menu-wrapper li:nth-child(4) {
+        margin-top: 0;
+    }
+    .second-tab-wrap .sub-menu-wrapper li:not(:first-child) {
+        margin-left: -1px;
+    }
+    /* 전형일정 영역 */
+    .schedule-table-wrapper table {
+        width: 100%;
+        font-size: 1em;
+    }
+    /* 모집단위 영역 */
+    .pro-table-wrapper table {
+        width: 100%;
+        font-size: 1em;
+    }
+    .normal-table-wrapper table {
+        width: 100%;
+        font-size: 1em;
+    }
+
+
+}
+
+/************ desktop 해상도 ************/
+@media (min-width: 992px) {
+    /* Sub Banner 백그라운드 이미지 */
+    .sub-banner {
+        height: 25vh;
+    }
+    /* Tab Menu */
+    .tab-menu-btn-wrapper .row {
+        font-size: 1em; 
+    }
+    .tab-menu-btn-wrapper .row div {
+        max-width: 200px;
+    }
+    /* Sub Menu */
+    .sub-menu-wrapper > div {
+        width: auto;
+    }
+    .sub-menu-wrapper ul {
+        display: block !important;
+    }
+    .sub-menu-wrapper li {
+        width: 120px;
+        float: left;
+    }
+    .first-tab-wrap .sub-menu-wrapper li:nth-child(4) {
+        margin-left: -1px;
+    }
+    .first-tab-wrap .sub-menu-wrapper li:nth-child(4),
+    .first-tab-wrap .sub-menu-wrapper li:nth-child(5) {
+        margin-top: 0;
+    }
+
+
+}

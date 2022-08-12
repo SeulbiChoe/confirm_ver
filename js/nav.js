@@ -10,13 +10,13 @@
             <nav class="lnb-desktop-menu border-bottom">
             <div>
                 <ul class="navbar-nav flex-column ps-lg-4 pt-lg-4 pb-lg-5">
-                    <li><a href="" class="nav-link fw-bold">물리교육 소개</a></li>
-                    <li><a href="" class="nav-link">물리인증제</a></li>
-                    <li><a href="" class="nav-link py-lg-0">한국중학생물리대회</a></li>
+                    <li><a href="./introduction.html" class="nav-link fw-bold">물리교육 소개</a></li>
+                    <li><a href="./introduction.html" class="nav-link">물리인증제</a></li>
+                    <li><a href="javascript:;" class="nav-link py-lg-0" id="gohidepage">한국중학생물리대회</a></li>
                 </ul>
                 <ul class="navbar-nav flex-column ps-lg-4 pt-lg-4 pb-lg-5">
-                    <li><a href="" class="nav-link fw-bold">원서접수</a></li>
-                    <li><a href="" class="nav-link">물리인증제 원서접수</a></li>
+                    <li><a href="./submit.html" class="nav-link fw-bold">원서접수</a></li>
+                    <li><a href="./submit.html" class="nav-link">물리인증제 원서접수</a></li>
                     <li><a href="" class="nav-link py-lg-0">한국중학생물리대회 원서접수</a></li>
                 </ul>
                 <ul class="navbar-nav flex-column ps-lg-4 pt-lg-4 pb-lg-5">
@@ -35,16 +35,16 @@
                 <ul class="navbar-nav lnb-menu">
                     <li class="py-2 py-lg-0 ps-3 lnb-img"><a href="./index.html"><img src="./img/logo.png"></a></li>
                     <li class="ps-lg-5 pe-lg-0 mt-3 mt-lg-0">
-                        <a href="" class="nav-link ps-4 px-lg-4 py-lg-0 fw-bold">물리교육 소개</a>
+                        <a href="./introduction.html" class="nav-link ps-4 px-lg-4 py-lg-0 fw-bold">물리교육 소개</a>
                         <ul class="navbar-nav sub-menu">
-                            <li><a href="" class="nav-link ps-4">물리인증제</a></li>
-                            <li class="border-bottom pb-4"><a href="" class="nav-link ps-4 py-0">한국중학생물리대회</a></li>
+                            <li><a href="./introduction.html" class="nav-link ps-4">물리인증제</a></li>
+                            <li class="border-bottom pb-4"><a href="javascript:;" class="nav-link ps-4 py-0">한국중학생물리대회</a></li>
                         </ul>
                     </li>
                     <li class="mt-3 mt-lg-0">
-                        <a href="" class="nav-link ps-4 py-lg-0 px-lg-4 fw-bold">원서접수</a>
+                        <a href="./submit.html" class="nav-link ps-4 py-lg-0 px-lg-4 fw-bold">원서접수</a>
                         <ul class="navbar-nav sub-menu">
-                            <li><a href="" class="nav-link ps-4">물리인증제 원서접수</a></li>
+                            <li><a href="./submit.html" class="nav-link ps-4">물리인증제 원서접수</a></li>
                             <li class="border-bottom pb-4"><a href="" class="nav-link ps-4 py-0">한국중학생물리대회 원서접수</a></li>
                         </ul>
                     </li>
@@ -101,6 +101,21 @@
                 });
             }
         }).resize();
+
+
+        // $('#gohidepage').click(function(){
+        //     location.href = 'introduction.html';
+        //     document.addEventListener('DOMContentsLoaded', function(){
+        //       $('.first-tab-wrap').hide();
+        //       $('.second-tab-wrap').show();
+        //     })
+      
+        //       $('.first-section-btn ').addClass('inactive');
+        //       $('.second-section-btn ').removeClass('inactive');
+        //       $('.second-section-btn ').addClass('active');
+      
+        //   });
+
 
 
                 // 브라우저 크기가 변할 때마다 새로고침1
