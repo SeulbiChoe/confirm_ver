@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D SLIDER</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="carousel">
+                <div class="item active">
+                    <div class="img-box">
+                        <div>
+                            <img src="img/slide_img_01.png" alt="" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                        </div>
+                        <div>
+                            <a href="#" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                                <img src="img/slide_img_02.png" alt="" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                                <span>원형사진</span>
+                            </a>
+                            <a href="#" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                                <img src="img/slide_img_03.png" alt="" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                                <span>실사비교</span>
+                            </a>
+                            <a href="https://storage.net-fs.com/hosting/6940828/15/" target='_blank' oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                                <img src="img/slide_img_04.png" alt="" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                                <span>BIM 가상체험</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="txt-box">
+                        <div>
+                            <h1>덕수궁 흥덕전 복원사업</h1>
+                            <p>
+                                주관기관: 문화재청 궁능유적본부 <br>
+                                사업기간: 2022년 11월 ~ 2027년 12월
+                            </p>
+                        </div>
+                        <p>
+                            흥덕전은 당초 덕수궁 동쪽에 있던 선원전의 화재로 소실된 어진을 복원하기 위해 각 지역의 어진을 이안하고 모사하는 이안청의 역할을 수행하였고, 
+                            1904년 효정왕후(헌종 계비)와 순명효황후(순종비), 그리고 1911년 순헌황귀비(고종 후궁, 영친왕 친모)의 승하 때는 빈전으로 사용되었다.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <div>
+                            <img src="img/미륵사지/미륵사지 전경.JPG" alt="" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                        </div>
+                        <div>
+                            <img src="img/dt_main_banner_02.jpg" alt="">
+                            <img src="img/dt_main_banner_03.jpg" alt="">
+                            <img src="img/미륵사지/Image2_002.png" alt="">
+                        </div>
+                    </div>
+                    <div class="txt-box">
+                        <div>
+                            <h1>미륵사지</h1>
+                            <p>
+                                주관기관: 문화재청 궁능유적본부 <br>
+                                사업기간: 2022년 11월 ~ 2027년 12월
+                            </p>
+                        </div>
+                        <p>
+                            흥덕전은 당초 덕수궁 동쪽에 있던 선원전의 화재로 소실된 어진을 복원하기 위해 각 지역의 어진을 이안하고 모사하는 이안청의 역할을 수행하였고, 
+                            1904년 효정왕후(헌종 계비)와 순명효황후(순종비), 그리고 1911년 순헌황귀비(고종 후궁, 영친왕 친모)의 승하 때는 빈전으로 사용되었다.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <div>
+                            <img src="img/조흥상회/조흥상회 전경 이미지.jpg" alt="" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                        </div>
+                        <div>
+                            <img src="img/dt_main_banner_02.jpg" alt="">
+                            <img src="img/dt_main_banner_03.jpg" alt="">
+                            <img src="img/dt_main_banner_04.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt-box">
+                        <div>
+                            <h1>조흥상회</h1>
+                            <p>
+                                주관기관: 문화재청 궁능유적본부 <br>
+                                사업기간: 2022년 11월 ~ 2027년 12월
+                            </p>
+                        </div>
+                        <p>
+                            흥덕전은 당초 덕수궁 동쪽에 있던 선원전의 화재로 소실된 어진을 복원하기 위해 각 지역의 어진을 이안하고 모사하는 이안청의 역할을 수행하였고, 
+                            1904년 효정왕후(헌종 계비)와 순명효황후(순종비), 그리고 1911년 순헌황귀비(고종 후궁, 영친왕 친모)의 승하 때는 빈전으로 사용되었다.
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="item">
+                    <div class="img-box">
+                        <div>
+                            <img src="img/dt_main_banner_01.jpg" alt="" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                        </div>
+                        <div>
+                            <img src="img/dt_main_banner_02.jpg" alt="">
+                            <img src="img/dt_main_banner_03.jpg" alt="">
+                            <img src="img/dt_main_banner_04.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt-box">
+                        <div>
+                            <h1>덕수궁 흥덕전 복원사업</h1>
+                            <p>
+                                주관기관: 문화재청 궁능유적본부 <br>
+                                사업기간: 2022년 11월 ~ 2027년 12월
+                            </p>
+                        </div>
+                        <p>
+                            흥덕전은 당초 덕수궁 동쪽에 있던 선원전의 화재로 소실된 어진을 복원하기 위해 각 지역의 어진을 이안하고 모사하는 이안청의 역할을 수행하였고, 
+                            1904년 효정왕후(헌종 계비)와 순명효황후(순종비), 그리고 1911년 순헌황귀비(고종 후궁, 영친왕 친모)의 승하 때는 빈전으로 사용되었다.
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+    </div>
+    <!-- img태그에서 alt 다음 속성들은 모두 오로지 파이어폭스에서 드래그를 방지하기 위함임! 다른 브라우저는 css로도 방지 가능함 -->
+
+    <!-- js -->
+    <script type="text/javascript">
+        var carousel = document.querySelector('.carousel');
+        var cellCount = 3;
+        var selectedIndex = 0;
+
+        function rotateCarousel() {
+        var angle = selectedIndex / cellCount * -360;
+        carousel.style.transform = 'translateZ(-850px) rotateY(' + angle + 'deg)';
+        }
+
+        var hammertime = new Hammer(document.getElementsByClassName('carousel')[0]);
+        hammertime.on('swipeleft', function(ev) {
+            selectedIndex++;
+            rotateCarousel();
+        });
+
+        var hammertime = new Hammer(document.getElementsByClassName('carousel')[0]);
+        hammertime.on('swiperight', function(ev) {
+            selectedIndex--;
+            rotateCarousel();
+        });
+
+        $(".next").on("click", function(){
+            selectedIndex++;
+            rotateCarousel();
+        });
+
+        $(".prev").on("click", function(){
+            selectedIndex--;
+            rotateCarousel();
+        });
+
+    </script>
+    
+    <!-- <script>
+
+var current = 0,
+slides = document.querySelectorAll('.item')
+        
+function nextOpacity () {
+    slides[current].classList.remove('active');
+    slides[current+1].classList.add('active');
+}
+function prevOpacity () {
+    slides[current].classList.remove('active');
+}
+
+$('.next').click(function(){
+
+if (current == 2) {
+    slides[current].classList.remove('active');
+    current = 0;
+    slides[current].classList.add('active');
+} else 
+if (current < 2) {
+    nextOpacity();
+    current = current + 1;
+}
+console.log(current)
+
+});
+
+
+    </script> -->
+</body>
+</html>
