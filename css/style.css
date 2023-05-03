@@ -481,3 +481,63 @@ footer a {
     white-space: nowrap;
     overflow: hidden;
 }
+
+/* Line-Up */
+.movie-contents {
+    color: #fff;
+}
+.movie-contents .top h2 {
+    font-size: 1.5em;
+    color: #fff;
+}
+.movie-contents .top .menu-list li a {
+    color: #eee;
+}
+.movie-wrap > div h2 {
+    font-size: 1.3em;
+    padding: 6px 0;
+    font-family: 'Pretendard-Regular';
+}
+.movie-wrap .movie-overview {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    -webkit-line-clamp:2;
+}
+.movie-wrap .release_date {
+    padding: 9px 0;
+    color: #ddd;
+}
+.movie-contents .mid .more-btn {
+    display: block;
+    margin-left: auto;
+    border: 1px solid darkorange;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    margin-bottom: 21px;
+}
+
+
+/* 맨 위로 */
+.scroll-top {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: darkorange;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.scroll-top a {
+    width: 30%;
+    height: 30%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: translateY(3px) rotate(-45deg);
+}

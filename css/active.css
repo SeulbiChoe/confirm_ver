@@ -56,3 +56,9 @@ body.hidden {
     font-weight: bold;
     color: darkorange !important;
 }
+
+/* Line-Up */
+.movie-contents .top .menu-list li.active a {
+    color: darkorange;
+    font-weight: bold;
+}
