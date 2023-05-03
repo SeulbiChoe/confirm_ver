@@ -34,3 +34,9 @@ $(function(){
         $('.mo_menu').removeClass('active');
     })
 });
+
+//맨 위로
+$('.scroll-top').click(function(){
+    $('html,body').animate({scrollTop:0}, '500');
+    return false;
+})
